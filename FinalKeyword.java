@@ -1,28 +1,25 @@
-//final-variable,method,class
-
-class Calc{
-    public void show(){//here you can use final keyword amke it is unique public final void show().
-        System.out.println("in Calc show");
-    };
-
-    public void add(int a, int b){
-        System.out.println(a+b);
-    };
-};
-
-class AdvCalc extends Calc{
-    public void show(){
-        System.out.println("by musssu");
-    };
-};
+//final variable/final method/final class.
 
 public class FinalKeyword {
-    public static void main(String arg[]){
-        // int num=7;//simple
-        // final int num=15;
-        // num=5;
-        // System.out.println(num);
-        AdvCalc obj=new AdvCalc();
-        obj.show();
+    public static void main(String args[]){
+        // int a=5;
+        // final int b=10;
+        // a=10;
+        // b=20; it not happen because already it become constant.
+        // System.out.println(a);
+        // System.out.println(b);
+        A aa=new A();
+        aa.display();
     };
-};
+}
+
+final class A{
+    final void display(){
+        System.out.println("Base class");
+    }
+}
+class B{ 
+    void display1(){
+        System.out.println("Derived class");
+    }
+}
